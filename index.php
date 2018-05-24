@@ -11,7 +11,7 @@ require_once './vendor/autoload.php';
   ));
 
 try {
-  $film = getFilm(100);
+  $film = getFilm(10);
 
   $template = $twig->loadTemplate('/Index/index.html.twig');
   echo $template->render(array(
