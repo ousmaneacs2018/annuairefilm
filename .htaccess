@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteBase /test/annuaire_films/annuairefilm
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+RewriteRule (.*) index.php?request=$1 [QSA,L]
